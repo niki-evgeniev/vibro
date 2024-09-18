@@ -233,7 +233,7 @@ h6,
     background-size: cover;
 }
 
-.page-header .breadcrumb-item+.breadcrumb-item::before {
+.page-header .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -715,4 +715,8 @@ h6,
 
 .catalog:nth-child(even) {
     margin-left: 25%;
+}
+
+.carousel-image {
+    max-height: 765px;
 }
