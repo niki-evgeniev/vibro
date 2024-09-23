@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HomeController {
+public class ProductController {
 
+    @GetMapping("/products")
+    public ModelAndView products(HttpServletRequest request) {
 
-    @GetMapping("/")
-    public ModelAndView index(HttpServletRequest request) {
-
-        ModelAndView modelAndView = new ModelAndView("index");
+        ModelAndView modelAndView = new ModelAndView("products");
         modelAndView.addObject("currentUrl", request.getRequestURI());
 
         return modelAndView;
+
     }
 }
