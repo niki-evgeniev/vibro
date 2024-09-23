@@ -3,31 +3,46 @@
       xmlns:th="http://www.thymeleaf.org">
 <body>
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-    <a th:href="@{/}" class="navbar-brand ps-3 me-0">
+    <a th:href="@{/}"
+       class="navbar-brand ps-3 me-0">
         <img src="//www.vibrofiltr.com/cdn/shop/files/oie_o7jn543AIUtz_small.png?v=1637242718" alt="">
     </a>
-    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button type="button"
+            class="navbar-toggler me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="collapse navbar-collapse"
+         id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a th:href="@{/}" th:classappend="${currentUrl == '/'} ? ' active'"
+            <a th:href="@{/}"
+               th:classappend="${currentUrl == '/'} ? ' active'"
                class="nav-item nav-link">Начало</a>
-            <a th:href="@{/products}" th:classappend="${currentUrl.startsWith('/products')} ? ' active'"
+            <a th:href="@{/products}"
+               th:classappend="${currentUrl.startsWith('/products')} ? ' active'"
                class="nav-item nav-link">Каталог</a>
-            <a href="about.html" class="nav-item nav-link disabled">За Нас</a>
-            <a href="service.html" class="nav-item nav-link disabled">Услуги</a>
+            <a href="about.html"
+               class="nav-item nav-link disabled">За Нас</a>
+            <a href="service.html"
+               class="nav-item nav-link disabled">Услуги</a>
             <div class="nav-item dropdown ">
                 <a href="#" class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown">Други</a>
                 <div class="dropdown-menu bg-light m-0">
-                    <a href="project.html" class="dropdown-item disabled">Проекти</a>
-                    <a href="feature.html" class="dropdown-item disabled">Каталог</a>
-                    <a href="team.html" class="dropdown-item disabled">Our Team</a>
-                    <a href="testimonial.html" class="dropdown-item disabled">Сертификати</a>
-                    <a href="404.html" class="dropdown-item disabled">404 Page</a>
+                    <a href="project.html"
+                       class="dropdown-item disabled">Проекти</a>
+                    <a href="feature.html"
+                       class="dropdown-item disabled">Каталог</a>
+                    <a href="team.html"
+                       class="dropdown-item disabled">Our Team</a>
+                    <a href="testimonial.html"
+                       class="dropdown-item disabled">Сертификати</a>
+                    <a href="404.html"
+                       class="dropdown-item disabled">404 Page</a>
                 </div>
             </div>
-            <a th:href="@{/contacts}" th:classappend="${currentUrl.startsWith('/contact')} ? ' active'"
+            <a th:href="@{/contacts}"
+               th:classappend="${currentUrl.startsWith('/contact')} ? ' active'"
                class="nav-item nav-link">Контакти</a>
         </div>
     </div>
