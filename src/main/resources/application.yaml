@@ -37,6 +37,8 @@ logging:
     org.springframework.security: INFO
 #    org.apache.coyote.http11.Http11Processor: DEBUG
 #    org.apache.tomcat.util.net: DEBUG
+server:
+  port: 8080
 
 
 

@@ -209,8 +209,8 @@ h6,
 .carousel-control-next-icon {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: var(--primary);
-    border: 15px solid var(--primary);
+    /*background-color: var(--primary);*/
+    /*border: 15px solid var(--primary);*/
     border-radius: 3.5rem;
 }
 
