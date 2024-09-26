@@ -1,6 +1,5 @@
 package vibro.vibro.Models.Entity;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
@@ -17,19 +16,19 @@ public class Product extends BaseEntity {
     private String description;
 
     @Column(name = "thickness", nullable = false)
-    private Integer thickness;
+    private Double thickness;
 
-    @Column(name = "sizeA", nullable = false)
-    private Integer sizeA;
+    @Column(name = "size-a", nullable = false)
+    private Double sizeA;
 
-    @Column(name = "sizeB", nullable = false)
-    private Integer sizeB;
+    @Column(name = "size-b", nullable = false)
+    private Double sizeB;
 
     @Column(name = "lostHz", nullable = false)
-    private Integer lostHz;
+    private Double lostHz;
 
     @Column(name = "lost", nullable = false)
-    private Integer lost;
+    private Double lost;
 
     @ManyToOne
     private User user;
@@ -37,9 +36,6 @@ public class Product extends BaseEntity {
     public Product() {
     }
 
-    public Integer getThickness() {
-        return thickness;
-    }
 
     public String getName() {
         return name;
@@ -47,6 +43,14 @@ public class Product extends BaseEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Double getThickness() {
+        return thickness;
+    }
+
+    public void setThickness(Double thickness) {
+        this.thickness = thickness;
     }
 
     public String getDescription() {
@@ -57,39 +61,35 @@ public class Product extends BaseEntity {
         this.description = description;
     }
 
-    public void setThickness(Integer thickness) {
-        this.thickness = thickness;
-    }
-
-    public Integer getSizeA() {
+    public Double getSizeA() {
         return sizeA;
     }
 
-    public void setSizeA(Integer sizeA) {
+    public void setSizeA(Double sizeA) {
         this.sizeA = sizeA;
     }
 
-    public Integer getSizeB() {
+    public Double getSizeB() {
         return sizeB;
     }
 
-    public void setSizeB(Integer sizeB) {
+    public void setSizeB(Double sizeB) {
         this.sizeB = sizeB;
     }
 
-    public Integer getLostHz() {
+    public Double getLostHz() {
         return lostHz;
     }
 
-    public void setLostHz(Integer lostHz) {
+    public void setLostHz(Double lostHz) {
         this.lostHz = lostHz;
     }
 
-    public Integer getLost() {
+    public Double getLost() {
         return lost;
     }
 
-    public void setLost(Integer lost) {
+    public void setLost(Double lost) {
         this.lost = lost;
     }
 
