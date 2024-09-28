@@ -22,6 +22,9 @@
             <a th:href="@{/products}"
                th:classappend="${currentUrl.startsWith('/products')} ? ' active'"
                class="nav-item nav-link">Каталог</a>
+            <a th:href="@{/test}"
+               th:classappend="${currentUrl.startsWith('/test')} ? ' active'"
+               class="nav-item nav-link">Test</a>
             <a href="about.html"
                class="nav-item nav-link disabled">За Нас</a>
             <a href="service.html"
