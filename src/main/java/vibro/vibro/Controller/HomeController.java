@@ -12,10 +12,8 @@ public class HomeController {
 
     @GetMapping("/")
     public ModelAndView index(HttpServletRequest request) {
-
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("currentUrl", request.getRequestURI());
-
         return modelAndView;
     }
 }
