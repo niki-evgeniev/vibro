@@ -31,6 +31,7 @@ public class AddProductToDB implements CommandLineRunner {
             product.setLostHz(200.0);
             product.setLost(0.38);
             product.setThickness(2.0);
+            product.setImagePath("/img/Vibrofiltr 2.jpg");
             productsRepository.save(product);
 
             product.setUuid(UUID.randomUUID());
@@ -44,6 +45,7 @@ public class AddProductToDB implements CommandLineRunner {
             product.setLostHz(200.0);
             product.setLost(0.50);
             product.setThickness(3.0);
+            product.setImagePath("/img/Vibrofiltr 3.jpg");
             productsRepository.save(product);
 
             product.setUuid(UUID.randomUUID());
@@ -57,6 +59,18 @@ public class AddProductToDB implements CommandLineRunner {
             product.setLostHz(200.0);
             product.setLost(0.60);
             product.setThickness(4.0);
+            product.setImagePath("/img/Vibrofiltr 4.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr 1.5");
+            product.setDescription("Използва се за оформяне на водоустойчив слой, изолиращ вибрациите в автомобили и други места, където също има нужда от звукоизолация, защита от вибрации и корозия. Виброгасящият материал има многослойна структура и се състои от слой от екологично чист състав от бутилкаучук и алуминиево фолио.");
+            product.setSizeA(0.7);
+            product.setSizeB(0.5);
+            product.setLostHz(200.0);
+            product.setLost(0.38);
+            product.setThickness(1.5);
+            product.setImagePath("/img/Vibrofiltr 1.jpg");
             productsRepository.save(product);
         }
     }

@@ -15,6 +15,9 @@ public class Product extends BaseEntity {
     @Column(name = "descriptions", nullable = false, columnDefinition = "TEXT")
     private String description;
 
+    @Column(name = "imagePath", nullable = false)
+    private String imagePath;
+
     @Column(name = "thickness", nullable = false)
     private Double thickness;
 
@@ -59,6 +62,14 @@ public class Product extends BaseEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
     public Double getSizeA() {
