@@ -20,6 +20,8 @@ public class ProductsAllDTO {
 
     private String sizeB;
 
+    private String totalSize;
+
     private String thickness;
 
     public ProductsAllDTO() {
@@ -87,6 +89,14 @@ public class ProductsAllDTO {
 
     public void setSizeB(String sizeB) {
         this.sizeB = sizeB;
+    }
+
+    public String getTotalSize() {
+        return totalSize;
+    }
+
+    public void setTotalSize(String totalSize) {
+        this.totalSize = totalSize;
     }
 
     public String getThickness() {

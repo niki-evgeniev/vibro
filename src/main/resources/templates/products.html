@@ -38,7 +38,7 @@
     <h1 class="display-5 mb-4 text-center">КАТАЛОГ</h1>
     <div th:each="p : ${products.getContent()}"
          th:object="${p}"
-            class="container catalog mb-5">
+         class="container catalog mb-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="position-relative me-lg-4">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <p class="fw-medium text-uppercase text-primary mb-2" th:text="*{name}">Vibrofiltr 2.0 </p>
+                <p class="fw-medium text-uppercase text-primary mb-2" th:text="*{name}">Vibrofiltr</p>
                 <p class="mb-4" th:text="*{description}"></p>
                 <div class="row gy-4">
                     <div class="col-12">
@@ -63,7 +63,7 @@
                                 <i class="fa fa-check text-white"></i>
                             </div>
                             <div class="ms-4">
-                                <h6 th:text="'Дебелина ' + *{thickness}">Дебелина: 2,0 mm</h6>
+                                <h6 th:text="'Дебелина : ' + *{thickness} + 'mm'"></h6>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                 <i class="fa fa-check text-white"></i>
                             </div>
                             <div class="ms-4">
-                                <h6 th:text="'Размер на лист: '+ *{sizeA} + ' x ' + *{sizeB} + ' / 0.175 m2'">Размер на лист: 0.5m х 0.35m / 0,175 m2</h6>
+                                <h6 th:text="'Размер на лист : '+ *{sizeA} + ' x ' + *{sizeB} + ' / ' + *{totalSize} + ' m2'"></h6>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                                 <i class="fa fa-check text-white"></i>
                             </div>
                             <div class="ms-4">
-                                <h6 th:text="'Коефициент на механични загуби при ' + *{lostHz} + 'Hz: ' + *{lost}">Коефициент на механични загуби при 200 Hz: 0,38</h6>
+                                <h6 th:text="'Коефициент на механични загуби при ' + *{lostHz} + ' Hz : ' + *{lost}"></h6>
                             </div>
                         </div>
                     </div>

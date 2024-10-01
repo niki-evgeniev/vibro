@@ -27,6 +27,13 @@ public class ProductServiceImpl implements ProductService {
             return modelMapper.map(product , ProductsAllDTO.class);
         });
 
+        for (ProductsAllDTO productsAllDTO : allProduct) {
+           double a = Double.parseDouble(productsAllDTO.getSizeA());
+           double b = Double.parseDouble(productsAllDTO.getSizeB());
+           double m2 = a * b;
+           productsAllDTO.setTotalSize(String.valueOf(m2));
+        }
+        System.out.println();
         return allProduct;
     }
 }
