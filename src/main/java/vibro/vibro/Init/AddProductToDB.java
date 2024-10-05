@@ -72,6 +72,61 @@ public class AddProductToDB implements CommandLineRunner {
             product.setThickness(1.5);
             product.setImagePath("/img/Vibrofiltr 1.jpg");
             productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Самозлепващ тепих - сив");
+            product.setDescription("некво инфо");
+            product.setSizeA(1.4);
+            product.setSizeB(0.7);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(2.0);
+            product.setImagePath("/img/tepih.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Самозлепващ тепих - черен");
+            product.setDescription("инфо");
+            product.setSizeA(1.4);
+            product.setSizeB(0.7);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(2.0);
+            product.setImagePath("/img/tepih-black.jpeg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Acoustic - Alveolar Foam");
+            product.setDescription("Материалът е самозалепващ и звукопоглъщащ.");
+            product.setSizeA(0.05);
+            product.setSizeB(0.1);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(2.0);
+            product.setImagePath("/img/Acoustic.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Sandwich Ulrta");
+            product.setDescription("Най-ефективният мембранен материал със затворени клетки с допълнителен ефект на потискане на вибрациите. С дебелина от само 6 мм, той  осигурява намаляне на шума с до 33 dB. Водоустойчив дизайн. Ефективността на материала се дължи на правилно подбраните дебелини и плътности на съставните му слоеве, а абсолютната влагозащита на материала гарантира високата му производителност през целия експлоатационен живот на автомобила.  Използваа се за зони под на автомобила  и багажно отделение");
+            product.setSizeA(0.5);
+            product.setSizeB(0.8);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(6.0);
+            product.setImagePath("/img/Acoustic.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr ECO 8");
+            product.setDescription("Изолаторът се използва най-добре заедно с вибро-изолационните материали като двуслоен слой за намаляване и абсорбиране на външни и въздушни шумове.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.75);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(8.0);
+            product.setImagePath("/img/eco.jpg");
+            productsRepository.save(product);
         }
     }
 
