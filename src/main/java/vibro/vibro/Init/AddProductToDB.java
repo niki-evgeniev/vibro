@@ -98,8 +98,8 @@ public class AddProductToDB implements CommandLineRunner {
             product.setUuid(UUID.randomUUID());
             product.setName("Acoustic - Alveolar Foam");
             product.setDescription("Материалът е самозалепващ и звукопоглъщащ.");
-            product.setSizeA(0.05);
-            product.setSizeB(0.1);
+            product.setSizeA(0.5);
+            product.setSizeB(1.0);
             product.setLostHz(0.0);
             product.setLost(0.0);
             product.setThickness(2.0);
@@ -127,6 +127,108 @@ public class AddProductToDB implements CommandLineRunner {
             product.setThickness(8.0);
             product.setImagePath("/img/eco.jpg");
             productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr Black Flex 10");
+            product.setDescription("Топлоизолационен материал на базата на разпенен каучук, който има свойствата на абсорбция и звукоизолация. Той е много пластичен, което позволява материалът да се използва за обработка на трудни повърхности при различни условия на работа. Продуктът е маслоустойчив и незапалим, не отделя токсини, което позволява да се използва върху всички повърхности на автомобила и в двигателното отделение.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.75);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(10.0);
+            product.setImagePath("/img/black-flex.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr Black Flex 6");
+            product.setDescription("Топлоизолационен материал на базата на разпенен каучук, който има свойствата на абсорбция и звукоизолация. Той е много пластичен, което позволява материалът да се използва за обработка на трудни повърхности при различни условия на работа. Продуктът е маслоустойчив и незапалим, не отделя токсини, което позволява да се използва върху всички повърхности на автомобила и в двигателното отделение.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.75);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(10.0);
+            product.setImagePath("/img/black-flex.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr ECO 4");
+            product.setDescription("Изолаторът се използва най-добре заедно с вибро-изолационните материали като двуслоен слой за намаляване и абсорбиране на външни и въздушни шумове.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.75);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(4.0);
+            product.setImagePath("/img/black-flex.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr Gray Wave 15");
+            product.setDescription("Материалът е самозалепващ, звукопоглъщащ и уплътняващ на основата на специална полиуретанова пяна, релеф във формата на пирамиди.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.5);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(15.0);
+            product.setImagePath("/img/black-flex.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr Gray Wave 15");
+            product.setDescription("Материалът е самозалепващ, звукопоглъщащ и уплътняващ на основата на специална полиуретанова пяна, релеф във формата на пирамиди.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.5);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(15.0);
+            product.setImagePath("/img/gray-wave.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr PPE ECO 8 Foil");
+            product.setDescription("Това е термоизолационен материал за автомобилния капак, с алуминиево фолио и самозалепваща се подложка.");
+            product.setSizeA(0.5);
+            product.setSizeB(0.75);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(8.0);
+            product.setImagePath("/img/ppe-eco.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr roll 1.5");
+            product.setDescription("Използва се за оформяне на водоустойчив слой, изолиращ вибрациите в автомобили и други места, където също има нужда от звукоизолация, защита от вибрации и корозия. Виброгасящият материал има многослойна структура и се състои от слой от екологично чист състав от бутилкаучук и алуминиево фолио.");
+            product.setSizeA(0.5);
+            product.setSizeB(6.00);
+            product.setLostHz(200.0);
+            product.setLost(0.21);
+            product.setThickness(1.5);
+            product.setImagePath("/img/roll.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr roll 2.0");
+            product.setDescription("Използва се за оформяне на водоустойчив слой, изолиращ вибрациите в автомобили и други места, където също има нужда от звукоизолация, защита от вибрации и корозия. Виброгасящият материал има многослойна структура и се състои от слой от екологично чист състав от бутилкаучук и алуминиево фолио.");
+            product.setSizeA(0.5);
+            product.setSizeB(4.00);
+            product.setLostHz(200.0);
+            product.setLost(0.32);
+            product.setThickness(2.0);
+            product.setImagePath("/img/roll.jpg");
+            productsRepository.save(product);
+
+            product.setUuid(UUID.randomUUID());
+            product.setName("Vibrofiltr Roller");
+            product.setDescription("Инструмент за полагане на дъмпинг материали, за по-доброто им прилепване.");
+            product.setSizeA(0.0);
+            product.setSizeB(0.00);
+            product.setLostHz(0.0);
+            product.setLost(0.0);
+            product.setThickness(0.0);
+            product.setImagePath("/img/roller.jpg");
+            productsRepository.save(product);
+
+
+
         }
     }
 
