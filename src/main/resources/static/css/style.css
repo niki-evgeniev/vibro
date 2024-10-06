@@ -318,10 +318,11 @@ h6,
     width: 0;
     height: 0;
     left: -1px;
-    border-left: 16px solid #FFFFFF;
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
+    /*border-left: 16px solid #FFFFFF;*/
+    /*border-top: 11px solid transparent;*/
+    /*border-bottom: 11px solid transparent;*/
 }
+
 
 @keyframes pulse-border {
     0% {
